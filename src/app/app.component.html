@@ -1,0 +1,22 @@
+<div class="container margin-top-5">
+  <div class="row justify-content-center">
+    <div class="col-sm-6 col-md-6 col-lg-6 ">
+      <div class="form-group">
+        <h4>Chat GPT API</h4>
+        <textarea class="form-control" id="texttosaerch" rows="3" placeholder="Ask me anything...." [(ngModel)] = "searchKeyword"></textarea>
+        <br>
+        <button type="button" class="form-control btn btn-outline-primary btn-lg btn-block" (click)="getResult()">Search in ChatGPT</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-sm-6 col-md-6 col-lg-6 ">
+      <div class="form-group result-section">
+        <pre>{{result != "" ? result: "Your result will appear here."}}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
